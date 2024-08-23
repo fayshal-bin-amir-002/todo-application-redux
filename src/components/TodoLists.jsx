@@ -2,7 +2,7 @@ import Todo from "./Todo";
 
 const TodoLists = () => {
     return (
-        <div className="border-y py-6 my-4">
+        <div className="border-t py-6">
             <Todo></Todo>
             <Todo></Todo>
         </div>

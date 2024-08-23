@@ -6,7 +6,7 @@ import { RxCrossCircled } from "react-icons/rx";
 {/* <MdOutlineRemoveDone /> */}
 const Todo = ({todo}) => {
     return (
-        <div className='flex justify-between items-center gap-4 mb-2 border-b'>
+        <div className='flex justify-between items-center gap-4 mb-2 pb-2 border-b'>
             <div className='flex items-center gap-2'>
             <button className='border-2 text-emerald-600 border-emerald-600 p-0.5 rounded-full'><IoMdDoneAll /></button>
             <p className='text-sm text-gray-600 line-through'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, error.</p>
