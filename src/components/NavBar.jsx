@@ -13,7 +13,7 @@ const NavBar = () => {
                     className="flex h-[5.5rem] items-stretch justify-between font-medium text-slate-700"
                     role="navigation"
                 >
-                    {/*      <!-- Brand logo --> */}
+                    
                     <a
                         id="WindUI"
                         aria-label="WindUI logo"
@@ -24,7 +24,7 @@ const NavBar = () => {
                         
                         ToDo
                     </a>
-                    {/*      <!-- Mobile trigger --> */}
+                    
                     <button
                         className={`relative order-10 block h-10 w-10 self-center lg:hidden
                 ${isToggleOpen
@@ -51,7 +51,7 @@ const NavBar = () => {
                             ></span>
                         </div>
                     </button>
-                    {/*      <!-- Navigation links --> */}
+                    
                     <ul
                         role="menubar"
                         aria-label="Select page"
