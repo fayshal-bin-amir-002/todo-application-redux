@@ -4,7 +4,7 @@ import { MdOutlineRemoveDone } from "react-icons/md";
 import { RxCrossCircled } from "react-icons/rx";
 
 {/* <MdOutlineRemoveDone /> */}
-const Todo = props => {
+const Todo = ({todo}) => {
     return (
         <div className='flex justify-between items-center gap-4 mb-1'>
             <div className='flex items-center gap-2'>
@@ -22,7 +22,7 @@ const Todo = props => {
 };
 
 Todo.propTypes = {
-    
+    todo: PropTypes.object
 };
 
 export default Todo;
