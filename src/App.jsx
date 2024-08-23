@@ -10,11 +10,13 @@ function App() {
   return (
     <Provider store={store}>
       <NavBar></NavBar>
-      <div className="h-[90vh] w-full flex justify-center items-center bg-gradient-to-br from-sky-100 to-purple-100">
-        <div className="w-full max-w-[600px] bg-white p-2 md:p-4 lg:p-6 mx-2 rounded-lg shadow-lg">
-          <TodoInput></TodoInput>
-          <TodoLists></TodoLists>
-          <FilterOptions></FilterOptions>
+      <div className="h-[90vh] bg-gradient-to-br from-sky-100 to-purple-100">
+        <div className="h-[60vh] w-full flex justify-center items-center">
+          <div className="w-full max-w-[600px] bg-white p-2 md:p-4 lg:p-6 mx-2 rounded-lg shadow-lg">
+            <TodoInput></TodoInput>
+            <TodoLists></TodoLists>
+            <FilterOptions></FilterOptions>
+          </div>
         </div>
       </div>
       <Toaster />
