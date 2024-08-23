@@ -1,3 +1,4 @@
+import FilterOptions from "./components/FilterOptions"
 import NavBar from "./components/NavBar"
 import TodoInput from "./components/TodoInput"
 import TodoLists from "./components/TodoLists"
@@ -10,6 +11,7 @@ function App() {
         <div className="w-full max-w-[600px] bg-white p-2 md:p-4 lg:p-6 mx-2 rounded-lg shadow-lg">
           <TodoInput></TodoInput>
           <TodoLists></TodoLists>
+          <FilterOptions></FilterOptions>
         </div>
       </div>
     </>
