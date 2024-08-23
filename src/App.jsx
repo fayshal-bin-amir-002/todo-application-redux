@@ -1,11 +1,13 @@
+import { Provider } from "react-redux"
 import FilterOptions from "./components/FilterOptions"
 import NavBar from "./components/NavBar"
 import TodoInput from "./components/TodoInput"
 import TodoLists from "./components/TodoLists"
+import store from "./redux/store"
 
 function App() {
   return (
-    <>
+    <Provider store={store}>
       <NavBar></NavBar>
       <div className="h-[90vh] w-full flex justify-center items-center bg-gradient-to-br from-sky-100 to-purple-100">
         <div className="w-full max-w-[600px] bg-white p-2 md:p-4 lg:p-6 mx-2 rounded-lg shadow-lg">
@@ -14,7 +16,7 @@ function App() {
           <FilterOptions></FilterOptions>
         </div>
       </div>
-    </>
+    </Provider>
   )
 }
 

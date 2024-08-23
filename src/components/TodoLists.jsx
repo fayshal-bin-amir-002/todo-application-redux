@@ -1,10 +1,15 @@
+import { useSelector } from "react-redux";
 import Todo from "./Todo";
 
 const TodoLists = () => {
+
+    const todos = useSelector((state) => state.todos); 
+
     return (
         <div className="border-t py-6">
-            <Todo></Todo>
-            <Todo></Todo>
+            {
+                todos.map((todo) => <Todo key={todo.id} todo={todo}></Todo>)
+            }
         </div>
     );
 };
