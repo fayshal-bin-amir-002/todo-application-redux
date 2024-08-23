@@ -7,8 +7,8 @@ const TodoInput = () => {
             <form>
                 <div className="relative">
                     <input type="text" className="w-full bg-gray-100 text-xl p-5 text-gray-600 focus:outline-none rounded-lg" placeholder="Write your todo..." />
-                    <button type="submit">
-                        <RiPlayListAddLine className="absolute text-2xl right-5 top-1/2 -translate-y-1/2 text-gray-600 cursor-pointer duration-300 hover:text-emerald-600 " />
+                    <button type="submit" title="Add your todo" className="bg-emerald-300 absolute p-2 rounded-full text-2xl right-5 top-1/2 -translate-y-1/2 cursor-pointer duration-300 hover:bg-emerald-500 ">
+                        <RiPlayListAddLine />
                     </button>
                 </div>
             </form>
