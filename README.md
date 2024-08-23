@@ -1,8 +1,13 @@
-# React + Vite
+# Todo Application (Redux)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Currently i'm learning redux. That's why i make a simple todo application using redux.
 
-Currently, two official plugins are available:
+- Add and remove todo
+- Mark the todo as a significant color and can change the color.
+- Make the todo complete or incomplete.
+- Can make all todos as completed.
+- Clear all completed todos.
+- Filter the todo by 3 category (all, complete, incomplete).
+- Filter the todo by todo's color.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [live link](https://react-todo-application-redux.netlify.app)
