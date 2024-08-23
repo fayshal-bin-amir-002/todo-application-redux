@@ -26,7 +26,7 @@ const Todo = ({ todo }) => {
     return (
         <div className='flex justify-between items-center gap-4 mb-2 pb-2 border-b'>
             <div className='flex items-center gap-2'>
-                <button onClick={() => handleChangeStatus(id)} className='border-2 text-emerald-600 border-emerald-600 p-0.5 rounded-full'>{completed ? <IoMdDoneAll /> : <MdOutlineRemoveDone />}</button>
+                <button onClick={() => handleChangeStatus(id)} className={`border-2 text-emerald-600 border-emerald-600 p-0.5 rounded-full ${completed && 'bg-emerald-600 text-white'}`}>{completed ? <IoMdDoneAll /> : <MdOutlineRemoveDone />}</button>
                 <p className={`text-sm text-gray-600 ${completed && 'line-through'}`}>{text}</p>
             </div>
             <div className='flex items-center gap-2'>

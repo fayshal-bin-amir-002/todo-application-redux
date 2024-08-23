@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar"
 import TodoInput from "./components/TodoInput"
 import TodoLists from "./components/TodoLists"
 import store from "./redux/store"
+import { Toaster } from "react-hot-toast"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <FilterOptions></FilterOptions>
         </div>
       </div>
+      <Toaster />
     </Provider>
   )
 }

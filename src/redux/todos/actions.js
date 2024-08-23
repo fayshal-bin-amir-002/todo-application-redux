@@ -2,7 +2,7 @@ import { ADDTODO, CLEARCOMPLETED, COMPLETEALL, DELETETODO, SELECTCOLOR, TOGGLECO
 
 export const addtodo = (todoText) => {
     return {
-        action: ADDTODO,
+        type: ADDTODO,
         payload: todoText
     }
 }

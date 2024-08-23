@@ -1,12 +1,32 @@
+import { useState } from "react";
+import toast from "react-hot-toast";
 import { RiPlayListAddLine } from "react-icons/ri";
 import { TiTick } from "react-icons/ti";
+import { useDispatch } from "react-redux";
+import { addtodo } from "../redux/todos/actions";
 
 const TodoInput = () => {
+
+    const dispatch = useDispatch();
+
+    const [text, setText] = useState('');
+
+    const handleAddTodo = (e) => {
+        e.preventDefault();
+        if(text.trim() === '') {
+            return toast.error("First write your todo!");
+        }
+        dispatch(addtodo(text));
+        setText("");
+        toast.success("Todo added successfully!");
+    } 
+
     return (
         <>
-            <form>
+            <form onSubmit={handleAddTodo}>
                 <div className="relative">
-                    <input type="text" className="w-full bg-gray-100 text-xl p-5 text-gray-600 focus:outline-none rounded-lg" placeholder="Write your todo..." />
+                    <input value={text} onChange={(e) => setText(e.target.value)} type="text" className="w-full bg-gray-100 text-xl p-5 text-gray-600 focus:outline-none rounded-lg" placeholder="Write your todo..." />
+
                     <button type="submit" title="Add your todo" className="bg-emerald-300 absolute p-2 rounded-full text-2xl right-5 top-1/2 -translate-y-1/2 cursor-pointer duration-300 hover:bg-emerald-500 ">
                         <RiPlayListAddLine />
                     </button>
